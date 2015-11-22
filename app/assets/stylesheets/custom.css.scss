@@ -1,2 +1,43 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.navbar-default{
+  background-color:#000000;
+}
+
+body{
+  background-color: #66675C;
+}
+.jumbotron h2{
+  color:#fff;
+}
+
+.jumbotron{
+  background-image: image-url("stress.jpg");
+  background-position: 50% 56%;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  border: 2px solid #58FA82;
+}
+
+#logo{
+  float:left;
+  font-size: 1.7em;
+  color: #fff;
+  letter-spacing: -1px;
+  font-weight:bold;
+}
+
+#logo:hover{
+  color: #58FA82;
+  text-decoration: none;
+}
+
+.center{
+  text-align:center;
+}
+
+.btn{
+  opacity:0.7;
+  border-color: #58FA82;
+}
