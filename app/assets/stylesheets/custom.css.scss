@@ -3,6 +3,7 @@
 
 .navbar-default{
   background-color:#000000;
+  border: 1px solid #58FA82;
 }
 
 body{
@@ -14,10 +15,13 @@ body{
 
 .jumbotron{
   background-image: image-url("stress.jpg");
-  background-position: 50% 56%;
   background-repeat: no-repeat;
-  background-size: 100% auto;
-  border: 2px solid #58FA82;
+  background-size: cover;
+  border: 1px solid #58FA82;
+}
+
+h1, h2{
+  color:#fff;
 }
 
 #logo{
@@ -40,4 +44,37 @@ body{
 .btn{
   opacity:0.7;
   border-color: #58FA82;
+}
+
+a{
+  color:#58FA82;
+}
+
+a:hover{
+  color:#fff;
+  text-decoration: none;
+}
+a:click{
+  color:#fff;
+}
+
+footer{
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #58FA82;
+  color:#000;
+}
+
+footer small{
+  float: left;
+}
+
+footer ul{
+  float: right;
+  list-style: none;
+}
+
+footer ul li{
+  float: left;
+  margin-left: 15px;
 }
