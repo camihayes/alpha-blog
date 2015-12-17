@@ -14,9 +14,12 @@
       </div>
     </ul>
     <% end %>
-    <h4 class="center description"><strong>Description:</strong></h4>
+    <h4 class="center description"><strong><span style="color:#58FA82">Description:</span></strong></h4>
     <hr>
     <%= simple_format(@article.description) %>
+    <% if @article.categories.any? %>
+      <p>Categories: <%= render @article.categories %></p>
+    <% end %>
     <div class="article-actions">
       <% if logged_in? && (current_user == @article.user || current_user.admin?) %>
       <%= link_to "Edit this article", edit_article_path(@article), class: "btn btn-xs btn-warning" %>
